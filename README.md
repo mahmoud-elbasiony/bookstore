@@ -1,8 +1,6 @@
 # bookstore
 
 Project Documentation
-
-Project Documentation
 =====================
 
 Table of Contents
@@ -12,13 +10,7 @@ Table of Contents
 2.  [Setting Up the Application](#setting-up-the-application)
 3.  [Running the Application](#running-the-application)
 4.  [API Endpoints](#api-endpoints)
-   *   [Authentication](#authentication)
-   *   [Books](#books)
-   *   [Patrons](#patrons)
-   *   [Borrowing Records](#borrowing-records)
-   *   [Registration](#registration)
-5.  [Obtaining a Token](#obtaining-a-token)
-6.  [Using the Token](#using-the-token)
+5.  [Using the Token](#using-the-token)
 
 
 
@@ -83,54 +75,7 @@ Running the Application
 
 API Endpoints
 -------------
-
-### Authentication
-
-Authentication is managed using JWT (JSON Web Tokens). Ensure you have a valid token to access secured endpoints.
-
-### Registration
-
-*   **Register a New User**
-
-    **POST** `/api/auth/signup`
-
-    Request Body:
-
-        {
-            "fullName": "fullName",
-            "email": "email",
-            "password": "password"
-        }
-
-
-Registers a new user with the specified fullName, email, and password.
-
-
-Obtaining a Token
------------------
-
-You must authenticate to obtain a JWT token. Use the following endpoint:
-
-*   **Login**
-
-    **POST** `/api/auth/login`
-
-    Request Body:
-
-        {
-            "email": "your-email",
-            "password": "your-password"
-        }
-
-
-    Response:
-    
-        {
-            "token": "your-jwt-token",
-            "expiresIn": expiration-time
-        }
-
-
+https://documenter.getpostman.com/view/27300981/2sA3s9BnjE
 
 Using the Token
 ---------------
@@ -139,8 +84,6 @@ Include the token in the `Authorization` header for protected endpoints:
 
     Authorization: your-jwt-token
 
-API DOCUMENTAION
----------------
 
-https://documenter.getpostman.com/view/27300981/2sA3s9BnjE
+
 
